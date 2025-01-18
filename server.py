@@ -24,6 +24,7 @@ def save_to_csv(temperature, humidity):
         
         writer.writerow({'time': formatted_time, 'temperature': temperature, 'humidity': humidity})
 
+
 @app.route('/')
 def index():
     return jsonify("IoT server for ESP32")
